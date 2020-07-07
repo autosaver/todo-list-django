@@ -1,10 +1,47 @@
-<!DOCTYPE html>
+
+{% load static %}
+
 <html lang="en">
+<div class="container">
 <head>
     <meta charset="UTF-8">
-    <titl>TODODO</titl></title>
+    <title>Aditya_kumar_singh</title>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <link rel="stylesheet" href="{% static "css/style.css" %}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
 </head>
 <body>
-<h1>hey this is your list</h1>
+
+<nav class="top">
+    <div class="container nav-wrapper">
+        <a href="/" class="brand-logo">Todo's List</a>
+        <ul id="nav-mobile" class="right">
+            <li><a href="/">Home</a></li>
+        </ul>
+    </div>
+</nav>
+
+<div class="container">
+
+    {% block content %}
+
+    {% endblock content %}
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+</div>
+
+<nav class="bottom-bar">
+    <div class="container nav-wrapper">
+        <a href="/" class="brand-logo">Made using Django</a>
+        <ul id="nav-mobile" class="right">
+            <li><a href="/">Refresh</a></li>
+        </ul>
+    </div>
+</nav>
+
 </body>
+</div>
 </html>
